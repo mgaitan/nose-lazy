@@ -2,21 +2,22 @@
 nose-lazy
 =========
 
-nose-lazy is a nose_ plugin that determine which tests need to be run
-based on the current GIT diff
+`nose-lazy is a nose_ plugin that run only the tests that were 
+affected on your last change, based on the current GIT diff.
 
-It's conceptually similar to nose-quickunit_ but a bit smarter: you don't need to respect
-any strict structure to contains your tests. nose-lazy will find them analyzing
-the last coverage_ report.
+It's conceptually similar to `nose-quickunit`_ but a bit smarter:
+you don't need to respect any strict structure to contains your
+tests. nose-lazy will find them analyzing the last coverage_ report.
 
-.. _nose: http://somethingaboutorange.com/mrl/projects/nose/
+.. _nose: https://nose.readthedocs.org/en/latest/
 .. _nose-quickunit: https://github.com/dcramer/nose-quickunit
 .. _coverage: https://pypi.python.org/pypi/coverage
+
 
 Django Support
 --------------
 
-nose-lazy can run your Django tests via django-nose_. Just install
+nose-lazy can run your Django tests via `django-nose+ _. Just install
 django-nose, then run your tests like so::
 
   ./manage.py test --with-lazy --logging-clear-handlers
